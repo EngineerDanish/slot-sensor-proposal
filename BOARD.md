@@ -92,7 +92,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff: Sent to Uzair on WhatsApp, 2026-10-31 at 02:46 PKT, as "Project Discussion_ 16-Slot Sensing Unit.docx" (10 kB). Delivered. P-1 to P-8 now wait on the client's reply through Uzair.
 
 ### T-02 Power budget and battery feasibility
-- Status: IN REVIEW
+- Status: REOPENED. Missing after scope update 2026-10-31: (1) standing current of the switch-sensing method T-03 chose (I2C expander with interrupt) next to strobed pull-ups and SPDT, and which one the budget uses; (2) sleep window per F-18 (after 10 pm, after several hours idle) and how sleep scanning is treated until the client answers.
 - Depends: none
 - Inputs: Fixed Facts, Working Assumptions
 - Deliverable: docs/power-budget.md (and analysis/power_budget.py if calculations are scripted)
@@ -100,7 +100,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff: 2026-10-31. Committed docs/power-budget.md and analysis/power_budget.py (all figures come from the script; nothing measured). Findings: SF decides the design. Per event at SF10 +22 dBm averages 380 uA (about 3.3 Ah a year); at SF7 93 uA. 1-minute grouping saves 0% in the worst case and about 34% fewer messages with random arrivals. Strobed scanning at 100 ms is 2.7 uA vs 3692 uA with static pull-ups. Sleep floor 7.8 uA at 25 C, 19.4 uA desert (assumed x2.5, weakest number). Li-ion 18650 loses about 62% of its charge in 2 years in desert heat with no load. Recommendation: one D-size Li-SOCl2 (ER34615, 19 Ah) with a pulse buffer, replaced on site at 2 years (F-20), 1-minute grouping as default (F-17); 4.1 years estimated at the worst case. A-6 is supported by the numbers. F-17 to F-24 arrived mid-ticket; the doc now reflects F-17, F-19 and F-20, and the desert profile (enclosure 60 to 70 C) stays as a conservative margin over the 38 C ambient in F-19. Blockers and notes for the manager: (1) The recommendation departs from F-7 (18650, max two); no 18650 option reaches 2 years at SF10, so this belongs in T-04 as a recommendation with reasons. (2) LoRaWAN region of the site is not in Fixed Facts; it sets worst-case TX power (EU868 about +14 dBm, US915 +22 dBm) and duty-cycle limits. Check whether the client already gave the site country before asking anything. (3) For T-03: a primary cell needs a pulse buffer or a spiral cell; the D cell changes enclosure size. (4) For T-05: Helium data credits at 664 uplinks a day are about USD 2.4 per unit per year (calculated, 1 DC per uplink at USD 0.00001).
 
 ### T-03 Architecture and part shortlist
-- Status: IN REVIEW
+- Status: REOPENED. Missing after scope update 2026-10-31: (1) the expander interrupt scheme vs T-02's strobed scanning: standing current with all 16 slots closed, and one agreed method; (2) BLE advertising with app-key encryption so only the client's app reads it (A-8, F-21); (3) Helium network server options and who owns the account and data credits.
 - Depends: none
 - Inputs: Fixed Facts, Working Assumptions
 - Deliverable: docs/architecture.md
