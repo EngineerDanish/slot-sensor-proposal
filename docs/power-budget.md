@@ -12,7 +12,9 @@ Grouping events into one message per minute saves nothing in the worst case (eve
 
 Li-ion is the weaker chemistry here. In desert heat a single 18650 loses an estimated 62% of its charge in 2 years to self-discharge and ageing alone, before the device draws anything.
 
-Recommendation: a single D-size Li-SOCl2 cell (ER34615, 19 Ah) with a pulse buffer. It gives an estimated 4.1 years at the worst case (SF10, +22 dBm, per event, desert), so the 2 year target holds even if the hotspot forces SF10. If the client prefers to keep the 18650 size, 2 years is only realistic when the link runs at SF7 to SF8, which a site test can show.
+Recommendation: a single D-size Li-SOCl2 cell (ER34615, 19 Ah) with a pulse buffer, replaced on site every 2 years (F-20), and 1-minute grouping as the default since the client accepts the delay (F-17). It gives an estimated 4.1 years at the worst case (SF10, +22 dBm, events evenly spread, desert), so the 2 year target holds even if the hotspot forces SF10. If the client prefers to keep the 18650 size, 2 years is only realistic when the link runs at SF7 to SF8, which a site test can show.
+
+The client gives 100 F (about 38 C) as the highest site temperature (F-19). Our desert profile assumes the enclosure reaches 60 to 70 C in sun, so the desert figures here lean conservative.
 
 ---
 
@@ -68,7 +70,7 @@ Recommendation: a single D-size Li-SOCl2 cell (ER34615, 19 Ah) with a pulse buff
 | Board leakage (supervisor, ESD, divider off) | 1.0 uA | [A] |
 | Pulse buffer leakage (primary cell only) | 3.0 uA | [A] |
 | Li-ion protection circuit (Li-ion only) | 3.0 uA | [A] |
-| Desert factor on the floor | x2.5 | [A] day average, enclosure 40 to 70 C |
+| Desert factor on the floor | x2.5 | [A] day average, enclosure 40 to 70 C. F-19 gives 38 C ambient, so this is on the safe side |
 
 ### Cells
 
@@ -253,15 +255,15 @@ The LoRaWAN region of the site is not in the Fixed Facts. It also sets the real 
 
 ## 9. Recommendation
 
-Use a single D-size Li-SOCl2 cell (ER34615, 19 Ah) with a low-leakage pulse buffer, and support both per event sending and 1-minute grouping in firmware.
+Use a single D-size Li-SOCl2 cell (ER34615, 19 Ah) with a low-leakage pulse buffer, in a holder that allows on-site replacement (F-20). Make 1-minute grouping the default (F-17) and keep per event sending as a setting.
 
-- At the worst case (SF10, +22 dBm, per event, desert) the estimated life is 4.1 years, about twice the 2 year target. This margin covers the uncertain desert sleep floor and an SF we cannot know until a site test.
+- At the worst case (SF10, +22 dBm, events evenly spread so grouping saves nothing, desert) the estimated life is 4.1 years, about twice the 2 year replacement interval. This margin covers the uncertain desert sleep floor and an SF we cannot know until a site test. With random event timing it rises to an estimated 5.6 years.
 
 - Li-ion 18650 is not recommended. Self-discharge and ageing in heat take most of its charge in 2 years, it needs a protection circuit and a regulator, and it is a heat risk in a sealed box. This supports working assumption A-6.
 
 - If the client wants to keep the 18650 size, the honest position is that 2 years holds only when the link runs at SF7 to SF8. A single A-size Li-SOCl2 (the closest primary cell to 18650, 18.5 x 50.5 mm) then gives an estimated 3.6 years at SF7. At SF9 and above it falls short.
 
-- 1-minute grouping (P-1) is worth having as a setting. It gives about 30% more life with random event timing, and it is required in EU868 if the link drops to SF11 or SF12.
+- 1-minute grouping (F-17) gives about 30% more life with random event timing at no cost to the client, and it is required in EU868 if the link drops to SF11 or SF12.
 
 All of these are estimates from the power budget, to be confirmed by measurement.
 
