@@ -64,7 +64,7 @@ Danish's decisions for the proposal. Internal only; names never appear in client
 | D-3 | PCB layout: Abdullah |
 | D-4 | Our proposal states our price only; Uzair adds his own share on top before passing it to the client |
 | D-5 | The proposal carries no company or personal name for now (we speak as "we") |
-| D-6 | Dashboard: we hand over a ready setup (code plus install guide) and the client installs it on their own account and pays the running costs. The client also pays the hosting and service costs during the prototype phase |
+| D-6 | Prototype is delivered in running form (units, dashboard and app working end to end). The dashboard and app are also handed over as a setup package the client installs on their own accounts. Live services (hosting, monitoring, ongoing operation) are not included; if the client wants them, they are priced separately. Running costs during the prototype are paid by the client |
 
 Still to decide: battery offer (D-size recommended, 18650 as option), prototype count, site signal test as first step, support period, prices per phase, advance and milestones, timeline, defaults for site region, quantity, app platforms, sleep-time events.
 
