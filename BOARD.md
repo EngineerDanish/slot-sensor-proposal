@@ -27,7 +27,7 @@ Stated by the client (through Uzair). Do not ask about these again.
 | F-13 | Priorities: minimal cost, long life, high reliability |
 | F-14 | Client will sign an NDA once the project moves forward, i.e. after they accept our proposal, not before it |
 | F-15 | Uzair has done two PCB projects for this client; no budget shared, asked us to suggest one |
-| F-16 | Danish handles hardware and firmware end to end; Uzair is not on the hardware side |
+| F-16 | Danish handles the project start to end, hardware included; Uzair confirmed he will not take any part (busy with other projects) and asked for our final quotation to discuss with the client |
 | F-17 | A delay of up to 1 minute is acceptable, so close events can go in one message (answer to P-1, 2026-10-31) |
 | F-18 | Daily sleep starts after 10 pm, following several hours of inactivity (answer to P-2, first half only) |
 | F-19 | Highest expected site temperature: 100 F (about 38 C). Read as ambient air; solar heating inside the enclosure is on top of this (answer to P-3) |
