@@ -49,6 +49,9 @@ Ours, not the client's. Change only with Danish's agreement.
 | A-4 | Dashboard, mobile app and 3D/enclosure were requested by the client (F-22 to F-24); priced as separate items, not awarded until the quotation is accepted |
 | A-5 | No price is quoted until after the NDA and scope discussion |
 | A-6 | Primary lithium (Li-SOCl2) is the likely cell given no charging and desert heat; to be confirmed by T-02 |
+| A-7 | Every uplink carries the full 16-slot state plus a counter, so a lost packet is corrected by the next one; uplinks unconfirmed, plus a daily heartbeat (battery voltage, temperature) |
+| A-8 | BLE is advertising-only, slot data encrypted with an app key so only the client's app can read it (follows F-21) |
+| A-9 | Enclosure internal temperature in sun is assumed 20 to 30 C above ambient, so up to about 70 C (follows F-19) |
 
 ## Parked Questions
 
@@ -64,6 +67,12 @@ Sent to the client in drafts/Project_Discussion_16-Slot_Sensing_Unit.docx. Answe
 | P-6 | Dashboard required? | CLOSED, see F-22 |
 | P-7 | Mobile application required? | CLOSED, see F-23 |
 | P-8 | 3D model and enclosure design required? | CLOSED, see F-24 |
+| P-9 | Country or region of the site (sets the LoRaWAN frequency plan, power and duty limits) | OPEN |
+| P-10 | Quantity: prototypes and expected production | OPEN |
+| P-11 | Where the data lands besides our dashboard, and who owns the Helium network account | OPEN |
+| P-12 | Certification needed (FCC, CE) or own use only | OPEN |
+| P-13 | Mobile app platforms: Android, iPhone or both | OPEN |
+| P-14 | Dashboard hosting (who hosts and pays) and number of users | OPEN |
 
 ## Asked Log
 
@@ -87,7 +96,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Depends: none
 - Inputs: Fixed Facts, Working Assumptions
 - Deliverable: docs/power-budget.md (and analysis/power_budget.py if calculations are scripted)
-- Done means: average current and battery life for per-event sending vs 1-minute grouping, at SF7, SF9 and SF10; switch scanning current with strobed pull-ups; sleep current; Li-ion 18650 vs Li-SOCl2 compared at desert temperatures including self-discharge; one clear recommendation; every number marked calculated, with assumptions listed
+- Done means: average current and battery life for per-event sending vs 1-minute grouping (grouping is the design case per F-17), with events spread evenly vs in bursts, at SF7, SF9 and SF10 and at 14 and 20 dBm transmit power; standing current of each switch-sensing method (internal pull-up, strobed pull-up, SPDT switch to VDD/GND); sleep schedule per F-18; switch scanning current with strobed pull-ups; sleep current; Li-ion 18650 vs Li-SOCl2 compared at enclosure temperatures up to 70 C (A-9) including self-discharge and capacity loss, and the buffer (supercap or hybrid capacitor) a primary cell needs for TX pulses; one clear recommendation; every number marked calculated, with assumptions listed
 - Handoff: 2026-10-31. Committed docs/power-budget.md and analysis/power_budget.py (all figures come from the script; nothing measured). Findings: SF decides the design. Per event at SF10 +22 dBm averages 380 uA (about 3.3 Ah a year); at SF7 93 uA. 1-minute grouping saves 0% in the worst case and about 34% fewer messages with random arrivals. Strobed scanning at 100 ms is 2.7 uA vs 3692 uA with static pull-ups. Sleep floor 7.8 uA at 25 C, 19.4 uA desert (assumed x2.5, weakest number). Li-ion 18650 loses about 62% of its charge in 2 years in desert heat with no load. Recommendation: one D-size Li-SOCl2 (ER34615, 19 Ah) with a pulse buffer, replaced on site at 2 years (F-20), 1-minute grouping as default (F-17); 4.1 years estimated at the worst case. A-6 is supported by the numbers. F-17 to F-24 arrived mid-ticket; the doc now reflects F-17, F-19 and F-20, and the desert profile (enclosure 60 to 70 C) stays as a conservative margin over the 38 C ambient in F-19. Blockers and notes for the manager: (1) The recommendation departs from F-7 (18650, max two); no 18650 option reaches 2 years at SF10, so this belongs in T-04 as a recommendation with reasons. (2) LoRaWAN region of the site is not in Fixed Facts; it sets worst-case TX power (EU868 about +14 dBm, US915 +22 dBm) and duty-cycle limits. Check whether the client already gave the site country before asking anything. (3) For T-03: a primary cell needs a pulse buffer or a spiral cell; the D cell changes enclosure size. (4) For T-05: Helium data credits at 664 uplinks a day are about USD 2.4 per unit per year (calculated, 1 DC per uplink at USD 0.00001).
 
 ### T-03 Architecture and part shortlist
@@ -95,7 +104,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Depends: none
 - Inputs: Fixed Facts, Working Assumptions
 - Deliverable: docs/architecture.md
-- Done means: block diagram; module choice (nRF52840 + SX1262 module vs alternatives) with reasons; sealed switch shortlist with actuation force suited to 200 g; battery and holder; supercap or buffer if a primary cell is used; enclosure sealing and breather needs; indicative BOM cost per unit with sources
+- Done means: block diagram; module choice (nRF52840 + SX1262 module vs alternatives) with reasons; sealed switch shortlist with actuation force suited to 200 g, comparing SPDT (no standing current) with SPST plus strobed pull-up; main board plus harness vs one long strip board for the 24 inch span; battery and holder; supercap or buffer if a primary cell is used; enclosure sealing and breather needs, including a sealed battery door and holder the client can open on site (F-20); BLE advertising with app-key encryption (A-8); Helium network server options and who would own the account; indicative BOM cost per unit with sources
 - Handoff: docs/architecture.md committed 2026-10-31. Covers every "Done means" item.
   - Result: RAK4630 module; Omron D2HW pin plunger switches (0.75 N, about 2.6x margin on 200 g, calculated); SPDT wiring into a TCA6416A expander so static switch current is zero by design and no strobing is needed (strobed pull-ups kept as fallback for T-02); TPS62840 buck because the module's 3.6 V limit is below a fresh cell; D-size ER34615 + hybrid layer capacitor in a field-replaceable holder, aligned with the T-02 handoff; IP67 polycarbonate box with membrane vent; indicative BOM USD 96.07 per unit (62.07 sourced, 34.00 estimated), slot body excluded.
   - For T-02 review: SPDT wiring removes even the 2.7 uA strobed scanning current. The expander adds about 3 uA standby (TI figure), so the net change is small; worth a line in the power budget. Read only the T-02 handoff on the board, not docs/power-budget.md, to stay within inputs.
@@ -107,9 +116,17 @@ Questions already sent to the client, so stations never repeat them: installatio
     - A-2 reads "dimensions needed only if the client supplies the enclosure". With F-24 we design the enclosure, so A-2 may need rewording. Not changed here.
     - Estimated BOM lines (expander, buck, buffer, BLE antenna, vent, PCBs, misc) need quotes after award. Switch mechanical life (43,800 operations over 3 years, calculated) to be checked against the Omron datasheet.
 
+### T-08 Service scope sheet
+- Status: READY
+- Depends: none
+- Inputs: Fixed Facts F-21 to F-24, Working Assumptions, Parked Questions P-13 and P-14
+- Deliverable: docs/service-scope.md
+- Done means: for dashboard, mobile app and 3D model and enclosure, each: proposed features (minimum and nice to have), platforms and hosting options with running costs, what the client must supply, what is excluded, and the open points that change the price; written so T-05 can put a fixed price on each
+- Handoff:
+
 ### T-04 Discussion agenda
-- Status: BLOCKED (T-02, T-03)
-- Depends: T-01, T-02, T-03
+- Status: BLOCKED (T-02, T-03, T-08)
+- Depends: T-01, T-02, T-03, T-08
 - Inputs: client answers, docs/power-budget.md, docs/architecture.md
 - Deliverable: drafts/discussion-agenda.md
 - Done means: one page, at most 6 points, each tied to a parked question or a design choice; no repeated questions
