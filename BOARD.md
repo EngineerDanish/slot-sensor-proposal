@@ -28,6 +28,14 @@ Stated by the client (through Uzair). Do not ask about these again.
 | F-14 | Client will sign an NDA once the project moves forward |
 | F-15 | Uzair has done two PCB projects for this client; no budget shared, asked us to suggest one |
 | F-16 | Danish handles hardware and firmware end to end; Uzair is not on the hardware side |
+| F-17 | A delay of up to 1 minute is acceptable, so close events can go in one message (answer to P-1, 2026-10-31) |
+| F-18 | Daily sleep starts after 10 pm, following several hours of inactivity (answer to P-2, first half only) |
+| F-19 | Highest expected site temperature: 100 F (about 38 C). Read as ambient air; solar heating inside the enclosure is on top of this (answer to P-3) |
+| F-20 | After 2 years the battery is replaced on site, not the whole unit (answer to P-4) |
+| F-21 | Bluetooth data readable by any nearby phone that has the specific app (answer to P-5) |
+| F-22 | Client wants the dashboard (answer to P-6) |
+| F-23 | Client wants the mobile application (answer to P-7) |
+| F-24 | Client wants the 3D model and enclosure design (answer to P-8) |
 
 ## Working Assumptions
 
@@ -38,24 +46,24 @@ Ours, not the client's. Change only with Danish's agreement.
 | A-1 | No LED, button or buzzer (power and sealing) |
 | A-2 | We select the switch; dimensions needed only if the client supplies the enclosure |
 | A-3 | Battery life is an estimate, never a guarantee |
-| A-4 | Dashboard, mobile app and 3D/enclosure are optional services, not awarded |
+| A-4 | Dashboard, mobile app and 3D/enclosure were requested by the client (F-22 to F-24); priced as separate items, not awarded until the quotation is accepted |
 | A-5 | No price is quoted until after the NDA and scope discussion |
 | A-6 | Primary lithium (Li-SOCl2) is the likely cell given no charging and desert heat; to be confirmed by T-02 |
 
 ## Parked Questions
 
-Sent to the client in drafts/Project_Discussion_16-Slot_Sensing_Unit.docx. Waiting for answers.
+Sent to the client in drafts/Project_Discussion_16-Slot_Sensing_Unit.docx. Answers received 2026-10-31 (annotated PDF via Uzair).
 
 | ID | Question | Status |
 |---|---|---|
-| P-1 | Is a delay of up to 1 minute acceptable, so close events can go in one message? | OPEN |
-| P-2 | What starts the daily sleep, and are events during sleep reported on wake? | OPEN |
-| P-3 | Highest temperature expected at the site? | OPEN |
-| P-4 | After 2 years, battery replaced on site or whole unit swapped? | OPEN |
-| P-5 | Bluetooth data readable by any nearby phone, or only authorised phones? | OPEN |
-| P-6 | Dashboard required? | OPEN |
-| P-7 | Mobile application required? | OPEN |
-| P-8 | 3D model and enclosure design required? | OPEN |
+| P-1 | Is a delay of up to 1 minute acceptable, so close events can go in one message? | CLOSED, see F-17 |
+| P-2 | What starts the daily sleep, and are events during sleep reported on wake? | PARTIAL: sleep trigger answered (F-18); reporting of events during sleep not answered |
+| P-3 | Highest temperature expected at the site? | CLOSED, see F-19 |
+| P-4 | After 2 years, battery replaced on site or whole unit swapped? | CLOSED, see F-20 |
+| P-5 | Bluetooth data readable by any nearby phone, or only authorised phones? | CLOSED, see F-21 |
+| P-6 | Dashboard required? | CLOSED, see F-22 |
+| P-7 | Mobile application required? | CLOSED, see F-23 |
+| P-8 | 3D model and enclosure design required? | CLOSED, see F-24 |
 
 ## Asked Log
 
@@ -91,7 +99,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff:
 
 ### T-04 Discussion agenda
-- Status: BLOCKED (T-02, T-03, client answers or NDA)
+- Status: BLOCKED (T-02, T-03)
 - Depends: T-01, T-02, T-03
 - Inputs: client answers, docs/power-budget.md, docs/architecture.md
 - Deliverable: drafts/discussion-agenda.md
