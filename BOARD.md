@@ -47,7 +47,7 @@ Ours, not the client's. Change only with Danish's agreement.
 | A-2 | We select the switch; dimensions needed only if the client supplies the enclosure |
 | A-3 | Battery life is an estimate, never a guarantee |
 | A-4 | Dashboard, mobile app and 3D/enclosure were requested by the client (F-22 to F-24); priced as separate items, not awarded until the quotation is accepted |
-| A-5 | We send an initial proposal with an estimate for a basic version only (minimum features in device, dashboard and app), to open the discussion (promised to Uzair for 2026-11-01), stated as expected to change. After the NDA, a detailed discussion with the client, then the final quotation |
+| A-5 | We send an initial proposal with an estimate for a basic version only (minimum features in device, dashboard and app), to open the discussion (promised to Uzair for tonight, 2026-10-31), stated as expected to change. After the NDA, a detailed discussion with the client, then the final quotation |
 | A-6 | Primary lithium (Li-SOCl2) is the likely cell given no charging and desert heat; to be confirmed by T-02 |
 | A-7 | Every uplink carries the full 16-slot state plus a counter, so a lost packet is corrected by the next one; uplinks unconfirmed, plus a daily heartbeat (battery voltage, temperature) |
 | A-8 | BLE is advertising-only, slot data encrypted with an app key so only the client's app can read it (follows F-21) |
@@ -147,7 +147,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Done means: one page, at most 6 points, each tied to a parked question or a design choice; no repeated questions
 - Handoff:
 
-### T-05 Initial proposal with tentative estimate (due 2026-11-01)
+### T-05 Initial proposal with tentative estimate (due tonight, 2026-10-31)
 - Status: BLOCKED (T-02, T-03, T-08, and Danish's commercial decisions)
 - Depends: T-02, T-03, T-08, Danish's commercial decisions (pricing, who builds app/dashboard/enclosure, prototype count, defaults for open client points)
 - Inputs: docs/power-budget.md, docs/architecture.md, docs/service-scope.md, Fixed Facts, Working Assumptions, open Parked Questions
