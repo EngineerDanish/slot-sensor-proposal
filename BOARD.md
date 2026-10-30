@@ -66,13 +66,13 @@ Questions already sent to the client, so stations never repeat them: installatio
 ## Tickets
 
 ### T-01 Send the discussion document
-- Status: READY
+- Status: DONE
 - Owner: Danish (manual)
 - Depends: none
 - Inputs: drafts/Project_Discussion_16-Slot_Sensing_Unit.docx
 - Deliverable: document sent to Uzair for the client
 - Done means: sent, with the date recorded in the handoff
-- Handoff:
+- Handoff: Sent to Uzair on WhatsApp, 2026-10-31 at 02:46 PKT, as "Project Discussion_ 16-Slot Sensing Unit.docx" (10 kB). Delivered. P-1 to P-8 now wait on the client's reply through Uzair.
 
 ### T-02 Power budget and battery feasibility
 - Status: READY
@@ -91,7 +91,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff:
 
 ### T-04 Discussion agenda
-- Status: BLOCKED (client answers or NDA)
+- Status: BLOCKED (T-02, T-03, client answers or NDA)
 - Depends: T-01, T-02, T-03
 - Inputs: client answers, docs/power-budget.md, docs/architecture.md
 - Deliverable: drafts/discussion-agenda.md
