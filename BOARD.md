@@ -13,7 +13,7 @@ Stated by the client (through Uzair). Do not ask about these again.
 | ID | Fact |
 |---|---|
 | F-1 | 16 slots, one mechanical switch per slot |
-| F-2 | 24 inches long, a slot every 6 inches |
+| F-2 | 24 inches long, in four 6 inch sections with 4 slots each (16 slots, about 1.5 in / 38 mm apart). Corrected 2026-10-31 from the client's own words; the discussion document wrongly said a slot every 6 inches, so the proposal states the layout for the client to confirm |
 | F-3 | Object weight approx. 200 to 210 g (assumed by the client for now) |
 | F-4 | No lid or cover over the slots |
 | F-5 | Approx. 30 to 40 place/remove events per slot per day (about 480 to 640 per unit) |
@@ -25,7 +25,7 @@ Stated by the client (through Uzair). Do not ask about these again.
 | F-11 | Bluetooth receiver is a mobile phone |
 | F-12 | Site is a desert; unit must resist UV, water and dirt |
 | F-13 | Priorities: minimal cost, long life, high reliability |
-| F-14 | Client will sign an NDA once the project moves forward |
+| F-14 | Client will sign an NDA once the project moves forward, i.e. after they accept our proposal, not before it |
 | F-15 | Uzair has done two PCB projects for this client; no budget shared, asked us to suggest one |
 | F-16 | Danish handles hardware and firmware end to end; Uzair is not on the hardware side |
 | F-17 | A delay of up to 1 minute is acceptable, so close events can go in one message (answer to P-1, 2026-10-31) |
@@ -47,7 +47,7 @@ Ours, not the client's. Change only with Danish's agreement.
 | A-2 | We select the switch; dimensions needed only if the client supplies the enclosure |
 | A-3 | Battery life is an estimate, never a guarantee |
 | A-4 | Dashboard, mobile app and 3D/enclosure were requested by the client (F-22 to F-24); priced as separate items, not awarded until the quotation is accepted |
-| A-5 | No price is quoted until after the NDA and scope discussion |
+| A-5 | The client expects a proposal with an idea of cost before any NDA or meeting. We send a proposal with fixed indicative prices per phase; open client points are stated as assumptions inside it |
 | A-6 | Primary lithium (Li-SOCl2) is the likely cell given no charging and desert heat; to be confirmed by T-02 |
 | A-7 | Every uplink carries the full 16-slot state plus a counter, so a lost packet is corrected by the next one; uplinks unconfirmed, plus a daily heartbeat (battery voltage, temperature) |
 | A-8 | BLE is advertising-only, slot data encrypted with an app key so only the client's app can read it (follows F-21) |
@@ -125,23 +125,23 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff:
 
 ### T-04 Discussion agenda
-- Status: BLOCKED (T-02, T-03, T-08)
+- Status: PARKED (superseded 2026-10-31: the client wants a proposal first; open points go into the proposal)
 - Depends: T-01, T-02, T-03, T-08
 - Inputs: client answers, docs/power-budget.md, docs/architecture.md
 - Deliverable: drafts/discussion-agenda.md
 - Done means: one page, at most 6 points, each tied to a parked question or a design choice; no repeated questions
 - Handoff:
 
-### T-05 Quotation
-- Status: BLOCKED
-- Depends: T-04 (discussion held)
-- Inputs: all docs, Fixed Facts, answered Parked Questions
-- Deliverable: drafts/quotation.docx
-- Done means: fixed price per phase (architecture, hardware, firmware, testing) and for each optional service the client selected; timeline; advance plus milestone payments; assumptions and exclusions; prototype parts at actual cost; no hours times rate shown
+### T-05 Proposal with indicative pricing
+- Status: BLOCKED (T-02, T-03, T-08, and Danish's commercial decisions)
+- Depends: T-02, T-03, T-08, Danish's commercial decisions (pricing, who builds app/dashboard/enclosure, prototype count, defaults for open client points)
+- Inputs: docs/power-budget.md, docs/architecture.md, docs/service-scope.md, Fixed Facts, Working Assumptions, open Parked Questions
+- Deliverable: drafts/proposal.docx
+- Done means: our understanding (layout per F-2 for the client to confirm); recommended design in plain terms; battery life as an estimate with its assumptions; fixed price per phase (architecture, hardware, firmware, testing) and for dashboard, mobile app and enclosure as separate items; timeline; advance plus milestones; prototype parts at actual cost; open points stated as assumptions with short questions; NDA at award; no hours times rate shown
 - Handoff:
 
 ### T-06 NDA review
-- Status: PARKED (waiting for the client's NDA)
+- Status: PARKED (client signs after accepting the proposal)
 - Depends: client
 - Inputs: the NDA document
 - Deliverable: short review note for Danish (term, scope, IP, jurisdiction, anything unusual)
