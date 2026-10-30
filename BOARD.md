@@ -132,12 +132,12 @@ Questions already sent to the client, so stations never repeat them: installatio
     - Estimated BOM lines (expander, buck, buffer, BLE antenna, vent, PCBs, misc) need quotes after award. Switch mechanical life (43,800 operations over 3 years, calculated) to be checked against the Omron datasheet.
 
 ### T-08 Service scope sheet
-- Status: READY
+- Status: IN REVIEW
 - Depends: none
 - Inputs: Fixed Facts F-21 to F-24, Working Assumptions, Parked Questions P-13 and P-14
-- Deliverable: docs/service-scope.md
+- Deliverable: drafts/Scope_Brief_Dashboard_and_App.docx and drafts/Scope_Brief_PCB_and_Enclosure.docx (partner briefs, replacing docs/service-scope.md)
 - Done means: for dashboard, mobile app and 3D model and enclosure, each: proposed features (minimum and nice to have), platforms and hosting options with running costs, what the client must supply, what is excluded, and the open points that change the price; written so T-05 can put a fixed price on each
-- Handoff:
+- Handoff: Written by the manager on Danish's direct request (2026-10-31) to get partner prices the same day. Dashboard and app brief goes to Noman; PCB and enclosure brief goes to Abdullah. Each asks for fixed prices per item, working days, assumptions and exclusions. Open items carried as assumptions: object size, site region, quantity, app platforms, user count. Prices come back to Danish, then feed T-05.
 
 ### T-04 Discussion agenda
 - Status: PARKED (superseded 2026-10-31: the client wants a proposal first; open points go into the proposal)
