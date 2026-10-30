@@ -83,12 +83,12 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff: Sent to Uzair on WhatsApp, 2026-10-31 at 02:46 PKT, as "Project Discussion_ 16-Slot Sensing Unit.docx" (10 kB). Delivered. P-1 to P-8 now wait on the client's reply through Uzair.
 
 ### T-02 Power budget and battery feasibility
-- Status: READY
+- Status: IN REVIEW
 - Depends: none
 - Inputs: Fixed Facts, Working Assumptions
 - Deliverable: docs/power-budget.md (and analysis/power_budget.py if calculations are scripted)
 - Done means: average current and battery life for per-event sending vs 1-minute grouping, at SF7, SF9 and SF10; switch scanning current with strobed pull-ups; sleep current; Li-ion 18650 vs Li-SOCl2 compared at desert temperatures including self-discharge; one clear recommendation; every number marked calculated, with assumptions listed
-- Handoff:
+- Handoff: 2026-10-31. Committed docs/power-budget.md and analysis/power_budget.py (all figures come from the script; nothing measured). Findings: SF decides the design. Per event at SF10 +22 dBm averages 380 uA (about 3.3 Ah a year); at SF7 93 uA. 1-minute grouping saves 0% in the worst case and about 34% fewer messages with random arrivals. Strobed scanning at 100 ms is 2.7 uA vs 3692 uA with static pull-ups. Sleep floor 7.8 uA at 25 C, 19.4 uA desert (assumed x2.5, weakest number). Li-ion 18650 loses about 62% of its charge in 2 years in desert heat with no load. Recommendation: one D-size Li-SOCl2 (ER34615, 19 Ah) with a pulse buffer, 4.1 years estimated at the worst case. A-6 is supported by the numbers. Blockers and notes for the manager: (1) The recommendation departs from F-7 (18650, max two); no 18650 option reaches 2 years at SF10, so this belongs in T-04 as a recommendation with reasons. (2) LoRaWAN region of the site is not in Fixed Facts; it sets worst-case TX power (EU868 about +14 dBm, US915 +22 dBm) and duty-cycle limits. Check whether the client already gave the site country before asking anything. (3) For T-03: a primary cell needs a pulse buffer or a spiral cell; the D cell changes enclosure size. (4) For T-05: Helium data credits at 664 uplinks a day are about USD 2.4 per unit per year (calculated, 1 DC per uplink at USD 0.00001).
 
 ### T-03 Architecture and part shortlist
 - Status: READY
