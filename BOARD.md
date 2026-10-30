@@ -53,6 +53,20 @@ Ours, not the client's. Change only with Danish's agreement.
 | A-8 | BLE is advertising-only, slot data encrypted with an app key so only the client's app can read it (follows F-21) |
 | A-9 | Enclosure internal temperature in sun is assumed 20 to 30 C above ambient, so up to about 70 C (follows F-19) |
 
+## Team and Commercial Decisions
+
+Danish's decisions for the proposal. Internal only; names never appear in client-facing text.
+
+| ID | Decision |
+|---|---|
+| D-1 | Dashboard: Noman. Mobile app: a developer Noman arranges. Both priced as separate items |
+| D-2 | 3D model and enclosure: Abdullah |
+| D-3 | PCB layout: Abdullah |
+| D-4 | Our proposal states our price only; Uzair adds his own share on top before passing it to the client |
+| D-5 | The proposal carries no company or personal name for now (we speak as "we") |
+
+Still to decide: battery offer (D-size recommended, 18650 as option), prototype count, site signal test as first step, support period, prices per phase, advance and milestones, timeline, defaults for site region, quantity, app platforms, dashboard hosting, sleep-time events.
+
 ## Parked Questions
 
 Sent to the client in drafts/Project_Discussion_16-Slot_Sensing_Unit.docx. Answers received 2026-10-31 (annotated PDF via Uzair).
