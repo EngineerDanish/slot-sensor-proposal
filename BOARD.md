@@ -64,8 +64,9 @@ Danish's decisions for the proposal. Internal only; names never appear in client
 | D-3 | PCB layout: Abdullah |
 | D-4 | Our proposal states our price only; Uzair adds his own share on top before passing it to the client |
 | D-5 | The proposal carries no company or personal name for now (we speak as "we") |
+| D-6 | Dashboard: we hand over a ready setup (code plus install guide) and the client installs it on their own account and pays the running costs. The client also pays the hosting and service costs during the prototype phase |
 
-Still to decide: battery offer (D-size recommended, 18650 as option), prototype count, site signal test as first step, support period, prices per phase, advance and milestones, timeline, defaults for site region, quantity, app platforms, dashboard hosting, sleep-time events.
+Still to decide: battery offer (D-size recommended, 18650 as option), prototype count, site signal test as first step, support period, prices per phase, advance and milestones, timeline, defaults for site region, quantity, app platforms, sleep-time events.
 
 ## Parked Questions
 
