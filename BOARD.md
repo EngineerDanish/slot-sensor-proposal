@@ -148,8 +148,8 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff:
 
 ### T-05 Initial proposal with tentative estimate (due tonight, 2026-10-31)
-- Status: BLOCKED (T-02, T-03, T-08, and Danish's commercial decisions)
-- Depends: T-02, T-03, T-08, Danish's commercial decisions (pricing, who builds app/dashboard/enclosure, prototype count, defaults for open client points)
+- Status: BLOCKED (partner prices from Noman and Abdullah, Danish's own price and terms). Manager decision 2026-10-31 17:20: the reopened points in T-02 and T-03 are design detail and do not change a basic-version estimate, so the proposal does not wait for them
+- Depends: T-08, partner prices, Danish's commercial decisions. Uses T-02 and T-03 as they stand
 - Inputs: docs/power-budget.md, docs/architecture.md, docs/service-scope.md, Fixed Facts, Working Assumptions, open Parked Questions
 - Deliverable: drafts/proposal.docx
 - Done means: our understanding (layout per F-2 for the client to confirm); recommended design in plain terms; battery life as an estimate with its assumptions; fixed price per phase (architecture, hardware, firmware, testing) and for dashboard, mobile app and enclosure as separate items; timeline; advance plus milestones; prototype parts at actual cost; open points stated as assumptions with short questions; NDA at award; no hours times rate shown
