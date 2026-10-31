@@ -62,7 +62,7 @@ Danish's decisions for the proposal. Internal only; names never appear in client
 | D-1 | Dashboard: Noman. Mobile app: a developer Noman arranges. Both priced as separate items |
 | D-2 | 3D model and enclosure: Abdullah |
 | D-3 | PCB layout: Abdullah |
-| D-4 | Our proposal states our price only; Uzair adds his own share on top before passing it to the client |
+| D-4 | Danish deals with the client directly and pays Uzair a commission out of the price (changed 2026-10-31; previously Uzair was to add his share on top). Client price must include Uzair's share. Terms with Uzair (percentage, base, payment timing, future work) to be agreed in writing |
 | D-5 | The proposal carries no company or personal name for now (we speak as "we") |
 | D-6 | Prototype is delivered in running form (units, dashboard and app working end to end). The dashboard and app are also handed over as a setup package the client installs on their own accounts. Live services (hosting, monitoring, ongoing operation) are not included; if the client wants them, they are priced separately. Running costs during the prototype are paid by the client |
 
