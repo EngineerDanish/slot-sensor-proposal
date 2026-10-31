@@ -187,7 +187,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff:
 
 ### T-05 Initial proposal with tentative estimate (due tonight, 2026-10-31)
-- Status: BLOCKED (partner prices from Noman and Abdullah, Danish's own price and terms). Manager decision 2026-10-31 17:20: the reopened points in T-02 and T-03 are design detail and do not change a basic-version estimate, so the proposal does not wait for them
+- Status: DONE (initial estimate sheet "RSMS: Remote Slot Monitoring System, Initial Cost Estimate and Milestones" sent 2026-11-01, USD 10,500 to 13,300, about 16 weeks, with cover message inviting NDA and a meeting. Waiting for the client's reply)
 - Depends: T-08, partner prices, Danish's commercial decisions. Uses T-02 and T-03 as they stand
 - Inputs: docs/power-budget.md, docs/architecture.md, docs/service-scope.md, Fixed Facts, Working Assumptions, open Parked Questions
 - Deliverable: drafts/proposal.docx
