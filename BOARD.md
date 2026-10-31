@@ -66,6 +66,7 @@ Danish's decisions for the proposal. Internal only; names never appear in client
 | D-5 | The proposal carries no company or personal name for now (we speak as "we") |
 | D-6 | Prototype is delivered in running form (units, dashboard and app working end to end). The dashboard and app are also handed over as a setup package the client installs on their own accounts. Live services (hosting, monitoring, ongoing operation) are not included; if the client wants them, they are priced separately. Running costs during the prototype are paid by the client |
 | D-7 | Project name for client-facing documents: Remote Slot Monitoring System (RSMS), decided 2026-11-01. Presented as the working name; the client may rename the product later |
+| D-8 | Initial estimate (RSMS sheet, 2026-11-01) deliberately leaves out requirements and architecture, testing, network server setup, documentation and handover, and project management, to open the discussion. These are added in the final proposal after the NDA meeting |
 
 Still to decide: battery offer (D-size recommended, 18650 as option), prototype count, site signal test as first step, support period, prices per phase, advance and milestones, timeline, defaults for site region, quantity, app platforms, sleep-time events.
 
