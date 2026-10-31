@@ -161,7 +161,7 @@ Questions already sent to the client, so stations never repeat them: installatio
   - Blockers: (1) Partner PCB layout hours are blank by design; the partner's own time and the slot body and enclosure work are outside these hours and need the partner's quote (T-08). (2) The site region (P-9) sets the radio variant and region plan; a dual-region build would add firmware and test hours. (3) If the client wants per-event timestamps or a non-trivial rule for events during sleep (P-2 second half), firmware hours rise. (4) A second board revision, site travel for the field trial, or certification (P-12) are not included and would each need a re-estimate. (5) The dev kit for early firmware is a small purchase after award, consistent with the no-spend-before-award rule.
 
 ### T-11 Internal pricing sheet
-- Status: IN REVIEW
+- Status: DONE (reviewed 2026-10-31. Open decision for Danish: Table 3 applies Uzair's share to partner lines as well; if his 10% is on Danish's own work only, partner lines should pass through without the gross-up)
 - Depends: T-10
 - Inputs: analysis/milestones-hw-fw.csv, docs/milestones-hw-fw.md, Team and Commercial Decisions D-1 to D-6
 - Deliverable: analysis/Slot_Sensor_Pricing_Internal.xlsx
