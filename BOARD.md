@@ -140,7 +140,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff: Written by the manager on Danish's direct request (2026-10-31) to get partner prices the same day. Dashboard and app brief goes to Noman; PCB and enclosure brief goes to Abdullah. Each asks for fixed prices per item, working days, assumptions and exclusions. Open items carried as assumptions: object size, site region, quantity, app platforms, user count. Prices come back to Danish, then feed T-05.
 
 ### T-09 System architecture diagram
-- Status: IN REVIEW
+- Status: DONE (reviewed 2026-10-31: all Done-means points met; use the PNG in the proposal)
 - Depends: none
 - Inputs: docs/architecture.md, docs/power-budget.md (summary and recommendation), Fixed Facts, Working Assumptions A-7 and A-8, Team decision D-6
 - Deliverable: docs/diagrams/system-architecture.svg and .png (source file alongside), one picture usable in the client proposal
