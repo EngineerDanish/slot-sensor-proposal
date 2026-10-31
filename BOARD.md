@@ -148,7 +148,7 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff: 2026-10-31. Committed docs/diagrams/system-architecture.svg, system-architecture.png (2000 x 1443 px) and the source system-architecture.py (hand-placed SVG written by Python, PNG rendered with Playwright/Chromium; rerun the script to regenerate). Greyscale-safe (solid = included, dashed = optional, plus "(optional)" text), no part numbers, IDs, names or prices; PNG checked visually. Assumptions: the "Backend and database" and "Web dashboard" boxes are drawn as included and only the live hosting around them as optional (per D-6); the pulse buffer is shown for both cell options because the brief asked for it, though a Li-ion pair would not strictly need one. Font is Inter with Arial fallback, so the SVG may reflow slightly on machines without Inter; use the PNG in the proposal. No blockers.
 
 ### T-10 Hardware and firmware milestone plan
-- Status: IN REVIEW
+- Status: DONE (reviewed 2026-10-31: all Done-means points met, totals checked. Note for pricing: testing hours assume a current profiler and a heat chamber are available; confirm with Danish)
 - Depends: none
 - Inputs: docs/architecture.md, docs/power-budget.md (summary, sections 9 and 10), Fixed Facts, Working Assumptions, Team decisions D-1 to D-6
 - Deliverable: docs/milestones-hw-fw.md and analysis/milestones-hw-fw.csv
