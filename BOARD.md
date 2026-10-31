@@ -160,6 +160,14 @@ Questions already sent to the client, so stations never repeat them: installatio
   - Check: a Python check parsed every subtask row, milestone subtotal, module total, summary row and weekly row of the .md against the CSV; no mismatches. No long dashes, names (other than Danish and partner as owners), rates or prices.
   - Blockers: (1) Partner PCB layout hours are blank by design; the partner's own time and the slot body and enclosure work are outside these hours and need the partner's quote (T-08). (2) The site region (P-9) sets the radio variant and region plan; a dual-region build would add firmware and test hours. (3) If the client wants per-event timestamps or a non-trivial rule for events during sleep (P-2 second half), firmware hours rise. (4) A second board revision, site travel for the field trial, or certification (P-12) are not included and would each need a re-estimate. (5) The dev kit for early firmware is a small purchase after award, consistent with the no-spend-before-award rule.
 
+### T-11 Internal pricing sheet
+- Status: IN PROGRESS
+- Depends: T-10
+- Inputs: analysis/milestones-hw-fw.csv, docs/milestones-hw-fw.md, Team and Commercial Decisions D-1 to D-6
+- Deliverable: analysis/Slot_Sensor_Pricing_Internal.xlsx
+- Done means: internal workbook (never sent to the client) with live formulas. Plan sheet: every T-10 subtask row with module, milestone, weeks, owner, hours, output; milestone and module subtotals; a week bar chart (weeks 1 to 18) by cell shading. Inputs block with editable cells: hourly rate (default 25 USD), buffer percent (15), Uzair share (10, client price = net / (1 - share)), partner coordination margin (10), advance percent (40). Partner block with blank input cells for PCB layout, slot body and enclosure, dashboard, mobile app. Summary sheet: price per module at rate, buffer, Danish net, partner lines with margin, optional items priced separately, Uzair share, client price per phase and grand total, and a payment schedule (advance plus milestone payments at design review, prototype bring-up, testing complete, handover). Every number driven by formulas from the inputs; recalculated and checked with no errors; no long dashes
+- Handoff:
+
 ### T-04 Discussion agenda
 - Status: PARKED (superseded 2026-10-31: the client wants a proposal first; open points go into the proposal)
 - Depends: T-01, T-02, T-03, T-08
