@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1010" width="1400" height="1010" font-family="Inter, Arial, Helvetica, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker><marker id="arrs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect x="0" y="0" width="1400" height="1010" fill="#fbfaf7"/>
+<text x="30" y="48" font-size="30" font-weight="700" text-anchor="start" fill="#1f2933" font-style="normal">16-slot sensing unit: system overview</text>
+<text x="30" y="80" font-size="19" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">Every place or remove event reaches the web dashboard over LoRaWAN and nearby phones over Bluetooth</text>
+<text x="30" y="122" font-size="15" font-weight="700" text-anchor="start" fill="#52606d" font-style="normal">THE UNIT (AT THE SITE)</text>
+<text x="780" y="122" font-size="15" font-weight="700" text-anchor="start" fill="#52606d" font-style="normal">RADIO AND PHONE</text>
+<text x="1130" y="122" font-size="15" font-weight="700" text-anchor="start" fill="#52606d" font-style="normal">ONLINE SERVICE</text>
+<line x1="30" y1="131" x2="1390" y2="131" stroke="#d3d8de" stroke-width="1.5"/>
+<rect x="30" y="145" width="570" height="455" rx="14" fill="#edf1f5" stroke="#34495e" stroke-width="2.5"/>
+<text x="48" y="176" font-size="22" font-weight="700" text-anchor="start" fill="#1f2933" font-style="normal">Sealed electronics bay</text>
+<text x="48" y="200" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">weatherproof box with breather vent</text>
+<rect x="45" y="218" width="270" height="155" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="180.0" y="257.5" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Replaceable lithium</text>
+<text x="180.0" y="281.5" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">battery</text>
+<text x="180.0" y="305.5" font-size="16" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">two 18650-class cells or</text>
+<text x="180.0" y="327.5" font-size="16" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">one D-size primary cell,</text>
+<text x="180.0" y="349.5" font-size="16" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">with pulse buffer</text>
+<rect x="375" y="255" width="210" height="80" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="480.0" y="289.0" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Low-power</text>
+<text x="480.0" y="315.0" font-size="20" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">regulator</text>
+<rect x="45" y="420" width="270" height="140" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="180.0" y="461.5" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Switch reader</text>
+<text x="180.0" y="486.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">16-input expander,</text>
+<text x="180.0" y="509.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">wakes the radio</text>
+<text x="180.0" y="532.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">on any change</text>
+<rect x="375" y="420" width="210" height="140" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="480.0" y="473.0" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Radio module</text>
+<text x="480.0" y="498.0" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">Bluetooth and</text>
+<text x="480.0" y="521.0" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">LoRaWAN in one</text>
+<path d="M315,295 L373,295" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="345" y="285" font-size="15" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">power</text>
+<path d="M480,335 L480,418" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M400,335 L400,395 L180,395 L180,418" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M315,490 L373,490" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M585,450 L640,450 L640,395" fill="none" stroke="#34495e" stroke-width="2.5"/>
+<path d="M628,378 L640,395 L652,378 M640,378 L640,395" fill="none" stroke="#34495e" stroke-width="2.5"/>
+<text x="610" y="474" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">External</text>
+<text x="610" y="494" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">LoRa antenna</text>
+<path d="M180,688 L180,562" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="195" y="640" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">sealed switch cable</text>
+<rect x="30" y="690" width="570" height="120" rx="14" fill="#f3efe6" stroke="#34495e" stroke-width="2.5"/>
+<text x="48" y="720" font-size="22" font-weight="700" text-anchor="start" fill="#1f2933" font-style="normal">Slot body, 24 inches long</text>
+<rect x="45" y="734" width="132" height="62" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+<rect x="60" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="69" cy="753" r="4" fill="#34495e"/>
+<rect x="89" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="98" cy="753" r="4" fill="#34495e"/>
+<rect x="118" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="127" cy="753" r="4" fill="#34495e"/>
+<rect x="147" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="156" cy="753" r="4" fill="#34495e"/>
+<text x="111.0" y="786" font-size="14" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">6 in section</text>
+<rect x="184" y="734" width="132" height="62" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+<rect x="199" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="208" cy="753" r="4" fill="#34495e"/>
+<rect x="228" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="237" cy="753" r="4" fill="#34495e"/>
+<rect x="257" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="266" cy="753" r="4" fill="#34495e"/>
+<rect x="286" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="295" cy="753" r="4" fill="#34495e"/>
+<text x="250.0" y="786" font-size="14" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">6 in section</text>
+<rect x="323" y="734" width="132" height="62" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+<rect x="338" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="347" cy="753" r="4" fill="#34495e"/>
+<rect x="367" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="376" cy="753" r="4" fill="#34495e"/>
+<rect x="396" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="405" cy="753" r="4" fill="#34495e"/>
+<rect x="425" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="434" cy="753" r="4" fill="#34495e"/>
+<text x="389.0" y="786" font-size="14" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">6 in section</text>
+<rect x="462" y="734" width="132" height="62" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+<rect x="477" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="486" cy="753" r="4" fill="#34495e"/>
+<rect x="506" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="515" cy="753" r="4" fill="#34495e"/>
+<rect x="535" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="544" cy="753" r="4" fill="#34495e"/>
+<rect x="564" y="744" width="18" height="18" rx="3" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<circle cx="573" cy="753" r="4" fill="#34495e"/>
+<text x="528.0" y="786" font-size="14" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">6 in section</text>
+<text x="30" y="840" font-size="17" font-weight="normal" text-anchor="start" fill="#1f2933" font-style="normal">Four 6 inch sections with 4 switches each:</text>
+<text x="30" y="864" font-size="17" font-weight="normal" text-anchor="start" fill="#1f2933" font-style="normal">16 sealed switches in total, one per slot</text>
+<path d="M646,395 L778,395" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="705" y="362" font-size="16" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">LoRaWAN</text>
+<text x="705" y="382" font-size="16" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">radio link</text>
+<rect x="780" y="340" width="260" height="110" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="910.0" y="378.0" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Helium hotspot</text>
+<text x="910.0" y="403.0" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">public network,</text>
+<text x="910.0" y="426.0" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">coverage at the site</text>
+<path d="M740,397 L740,580 L778,580" fill="none" stroke="#34495e" stroke-width="2.2" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<rect x="780" y="515" width="260" height="130" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="910.0" y="551.5" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Client-owned gateway</text>
+<text x="910.0" y="576.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">at the site, instead of</text>
+<text x="910.0" y="599.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">public hotspots</text>
+<text x="910.0" y="622.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="italic">(optional)</text>
+<rect x="1130" y="340" width="260" height="110" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="1260.0" y="389.5" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">LoRaWAN</text>
+<text x="1260.0" y="414.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">network server</text>
+<path d="M1040,395 L1128,395" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="1085" y="384" font-size="15" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">internet</text>
+<path d="M1040,580 L1085,580 L1085,430 L1128,430" fill="none" stroke="#34495e" stroke-width="2.2" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<rect x="1110" y="490" width="280" height="410" rx="14" fill="#f4f6f8" stroke="#34495e" stroke-width="2" stroke-dasharray="9 6"/>
+<rect x="1130" y="510" width="245" height="100" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="1252.5" y="554.0" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Backend and</text>
+<text x="1252.5" y="580.0" font-size="20" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">database</text>
+<rect x="1130" y="680" width="245" height="120" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="1252.5" y="723.0" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Web dashboard</text>
+<text x="1252.5" y="748.0" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">users log in</text>
+<text x="1252.5" y="771.0" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">from a browser</text>
+<path d="M1252,450 L1252,508" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M1252,610 L1252,678" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="1252" y="840" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="italic">Live hosting and</text>
+<text x="1252" y="862" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="italic">monitoring service</text>
+<text x="1252" y="884" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="italic">(optional)</text>
+<path d="M585,525 L700,525 L700,800 L778,800" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="780" y="690" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">Bluetooth broadcast,</text>
+<text x="780" y="711" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">encrypted so only the</text>
+<text x="780" y="732" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="normal">client's app can read it</text>
+<rect x="780" y="750" width="260" height="110" rx="10" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+<text x="910.0" y="799.5" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2933" font-style="normal">Mobile app</text>
+<text x="910.0" y="824.5" font-size="17" font-weight="normal" text-anchor="middle" fill="#52606d" font-style="normal">on the client's phone</text>
+<path d="M778,840 L670,840 L670,550 L587,550" fill="none" stroke="#34495e" stroke-width="2.2" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<text x="780" y="890" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="italic">Firmware update over</text>
+<text x="780" y="911" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="italic">Bluetooth from the app</text>
+<text x="780" y="932" font-size="16" font-weight="normal" text-anchor="start" fill="#52606d" font-style="italic">(optional)</text>
+<rect x="30" y="910" width="570" height="62" rx="10" fill="#ffffff" stroke="#c4cbd3" stroke-width="1.5"/>
+<text x="48" y="947" font-size="16" font-weight="700" text-anchor="start" fill="#1f2933" font-style="normal">Legend</text>
+<path d="M130,940 L190,940" fill="none" stroke="#34495e" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="202" y="946" font-size="16" font-weight="normal" text-anchor="start" fill="#1f2933" font-style="normal">included</text>
+<path d="M305,940 L365,940" fill="none" stroke="#34495e" stroke-width="2.2" stroke-dasharray="9 6" marker-end="url(#arr)"/>
+<text x="377" y="946" font-size="16" font-weight="normal" text-anchor="start" fill="#1f2933" font-style="normal">optional, offered separately</text>
+</svg>

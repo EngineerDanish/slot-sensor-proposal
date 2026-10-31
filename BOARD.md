@@ -140,12 +140,12 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Handoff: Written by the manager on Danish's direct request (2026-10-31) to get partner prices the same day. Dashboard and app brief goes to Noman; PCB and enclosure brief goes to Abdullah. Each asks for fixed prices per item, working days, assumptions and exclusions. Open items carried as assumptions: object size, site region, quantity, app platforms, user count. Prices come back to Danish, then feed T-05.
 
 ### T-09 System architecture diagram
-- Status: IN PROGRESS
+- Status: IN REVIEW
 - Depends: none
 - Inputs: docs/architecture.md, docs/power-budget.md (summary and recommendation), Fixed Facts, Working Assumptions A-7 and A-8, Team decision D-6
 - Deliverable: docs/diagrams/system-architecture.svg and .png (source file alongside), one picture usable in the client proposal
 - Done means: shows the whole system end to end. Unit side: slot body (24 in, four 6 in sections, 4 switches each), sealed electronics bay with radio module (Bluetooth + LoRaWAN), switch reader, regulator, replaceable lithium battery with pulse buffer (cell type not fixed: two 18650-class or one D-size primary cell). Data side: LoRaWAN uplink to Helium hotspot, network server, backend and database, web dashboard; Bluetooth broadcast (encrypted, readable only by the client's app) to the mobile app. Optional items drawn dashed and labelled optional: client-owned gateway, firmware update over Bluetooth from the app, live hosting service. Labels in plain words a non-engineer can follow; no internal IDs, no people's or partner names, no prices, no long dashes; readable at A4 width and in print; PNG checked visually
-- Handoff:
+- Handoff: 2026-10-31. Committed docs/diagrams/system-architecture.svg, system-architecture.png (2000 x 1443 px) and the source system-architecture.py (hand-placed SVG written by Python, PNG rendered with Playwright/Chromium; rerun the script to regenerate). Greyscale-safe (solid = included, dashed = optional, plus "(optional)" text), no part numbers, IDs, names or prices; PNG checked visually. Assumptions: the "Backend and database" and "Web dashboard" boxes are drawn as included and only the live hosting around them as optional (per D-6); the pulse buffer is shown for both cell options because the brief asked for it, though a Li-ion pair would not strictly need one. Font is Inter with Arial fallback, so the SVG may reflow slightly on machines without Inter; use the PNG in the proposal. No blockers.
 
 ### T-04 Discussion agenda
 - Status: PARKED (superseded 2026-10-31: the client wants a proposal first; open points go into the proposal)
