@@ -139,6 +139,14 @@ Questions already sent to the client, so stations never repeat them: installatio
 - Done means: for dashboard, mobile app and 3D model and enclosure, each: proposed features (minimum and nice to have), platforms and hosting options with running costs, what the client must supply, what is excluded, and the open points that change the price; written so T-05 can put a fixed price on each
 - Handoff: Written by the manager on Danish's direct request (2026-10-31) to get partner prices the same day. Dashboard and app brief goes to Noman; PCB and enclosure brief goes to Abdullah. Each asks for fixed prices per item, working days, assumptions and exclusions. Open items carried as assumptions: object size, site region, quantity, app platforms, user count. Prices come back to Danish, then feed T-05.
 
+### T-09 System architecture diagram
+- Status: IN PROGRESS
+- Depends: none
+- Inputs: docs/architecture.md, docs/power-budget.md (summary and recommendation), Fixed Facts, Working Assumptions A-7 and A-8, Team decision D-6
+- Deliverable: docs/diagrams/system-architecture.svg and .png (source file alongside), one picture usable in the client proposal
+- Done means: shows the whole system end to end. Unit side: slot body (24 in, four 6 in sections, 4 switches each), sealed electronics bay with radio module (Bluetooth + LoRaWAN), switch reader, regulator, replaceable lithium battery with pulse buffer (cell type not fixed: two 18650-class or one D-size primary cell). Data side: LoRaWAN uplink to Helium hotspot, network server, backend and database, web dashboard; Bluetooth broadcast (encrypted, readable only by the client's app) to the mobile app. Optional items drawn dashed and labelled optional: client-owned gateway, firmware update over Bluetooth from the app, live hosting service. Labels in plain words a non-engineer can follow; no internal IDs, no people's or partner names, no prices, no long dashes; readable at A4 width and in print; PNG checked visually
+- Handoff:
+
 ### T-04 Discussion agenda
 - Status: PARKED (superseded 2026-10-31: the client wants a proposal first; open points go into the proposal)
 - Depends: T-01, T-02, T-03, T-08
