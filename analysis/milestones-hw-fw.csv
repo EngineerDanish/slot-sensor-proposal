@@ -1,0 +1,78 @@
+Module,Milestone,Week,Subtask,Owner,Hours,Output
+Requirements and architecture,M1.1 Requirements freeze,1,"Kickoff with the client to confirm open points (site region, quantity, slot layout, app platforms, events during sleep)",Danish,3,Meeting notes
+Requirements and architecture,M1.1 Requirements freeze,1,Write the requirements specification for the basic version,Danish,5,docs/requirements.md
+Requirements and architecture,M1.2 Architecture freeze,1 to 2,"Finalise architecture and part choices from client answers (radio variant, cell type, harness route)",Danish,4,docs/architecture.md (final)
+Requirements and architecture,M1.2 Architecture freeze,1 to 2,Update the power budget for the final choices,Danish,3,docs/power-budget.md (final)
+Requirements and architecture,M1.2 Architecture freeze,1 to 2,"Define interfaces with partners: board outline, connector and harness for enclosure, data fields for dashboard and app",Danish,3,docs/interfaces.md
+Hardware design,M2.1 Schematic,2 to 3,"Power section: cell holder, pulse buffer, buck regulator, reverse polarity, switched battery divider",Danish,6,Schematic sheet: power
+Hardware design,M2.1 Schematic,2 to 3,"Radio module section: RAK4630, LoRa and BLE antenna feeds, SWD, decoupling, test and current measurement points",Danish,5,Schematic sheet: radio
+Hardware design,M2.1 Schematic,2 to 3,"Switch interface: TCA6416A, series resistors, ESD clamps, switched NC rail, harness connector",Danish,5,Schematic sheet: switch interface
+Hardware design,M2.1 Schematic,2 to 3,Switch section board schematic (4 switches per 6 inch section),Danish,3,Schematic: switch section board
+Hardware design,M2.1 Schematic,2 to 3,"Electrical rules check, netlist and schematic PDF",Danish,2,Schematic PDF and netlist
+Hardware design,M2.2 Part selection,3 to 4,"Datasheet checks: switch mechanical life, expander inputs without pull-ups, buffer replacement rules, temperature ratings",Danish,4,Part selection notes
+Hardware design,M2.2 Part selection,3 to 4,"BOM with sources, alternates and quantities for 3 prototypes plus spares",Danish,3,BOM spreadsheet
+Hardware design,M2.2 Part selection,3 to 4,Footprint and library check for every part,Danish,3,Checked part library
+Hardware design,M2.3 Design review,4,Internal schematic review against a checklist,Danish,3,Review checklist
+Hardware design,M2.3 Design review,4,Design review summary for the client and answers to their comments,Danish,2,Design review note
+Hardware design,M2.3 Design review,4,"Schematic fixes after review, release to layout",Danish,2,Released schematic rev A
+Hardware design,M2.4 PCB layout,5 to 6,Main board layout,partner,,Main board layout files
+Hardware design,M2.4 PCB layout,5 to 6,Switch section board layout,partner,,Section board layout files
+Hardware design,M2.4 PCB layout,5 to 6,"Gerbers, drill, pick and place and assembly drawings",partner,,Fabrication package
+Hardware design,M2.4 PCB layout,5 to 6,"Layout review: antenna keep-out, power paths, test points, fit with enclosure",Danish,4,Layout review comments
+Prototype build and bring-up,M3.1 Fabrication and parts,7 to 11,"Place PCB fabrication and parts orders, track deliveries",Danish,3,Purchase orders
+Prototype build and bring-up,M3.1 Fabrication and parts,7 to 11,Incoming inspection of boards and parts,Danish,2,Inspection checklist
+Prototype build and bring-up,M3.2 Assembly,11 to 12,"Assemble 3 units: remaining parts, switches, harnesses",Danish,10,3 assembled prototype boards
+Prototype build and bring-up,M3.2 Assembly,11 to 12,Fit check with the slot body and enclosure supplied by the partner,Danish,3,Fit check notes
+Prototype build and bring-up,M3.3 Bring-up,12,"Power-up, rail checks and first current check on each unit",Danish,3,Bring-up log
+Prototype build and bring-up,M3.3 Bring-up,12,"Programming, module check and radio sanity test on each unit",Danish,2,Bring-up log
+Prototype build and bring-up,M3.3 Bring-up,12,Rework and hardware errata list,Danish,3,Errata list
+Firmware,M4.1 Board bring-up on Zephyr,5 and 13,"Zephyr project, custom board definition and devicetree, build setup (first on the module dev kit)",Danish,6,"Firmware repo, board files"
+Firmware,M4.1 Board bring-up on Zephyr,5 and 13,Move firmware to the prototype boards and fix pin and power differences,Danish,4,Firmware running on prototype
+Firmware,M4.2 Switch reading and debounce,5 to 6,Expander driver setup and interrupt wake from sleep,Danish,5,Switch input module
+Firmware,M4.2 Switch reading and debounce,5 to 6,"Debounce, 16-slot state and event counter",Danish,5,Slot state module
+Firmware,M4.2 Switch reading and debounce,5 to 6,Unit tests for debounce and state logic,Danish,3,Test results
+Firmware,M4.3 LoRaWAN on Helium,6 to 8,"LoRaWAN stack setup, region settings, OTAA join on Helium",Danish,8,Joined device on Helium console
+Firmware,M4.3 LoRaWAN on Helium,6 to 8,1-minute grouping with full 16-slot state and counter in each unconfirmed uplink,Danish,6,Uplink module
+Firmware,M4.3 LoRaWAN on Helium,6 to 8,"Join retry, link check, data rate policy and duty cycle handling",Danish,6,Link handling module
+Firmware,M4.4 Encrypted BLE advertising,9,"Advertising payload with slot state, encrypted with the app key, with replay counter",Danish,8,BLE module
+Firmware,M4.4 Encrypted BLE advertising,9,Per-unit key provisioning and reference decoder for the app team,Danish,4,Key tool and reference decoder
+Firmware,M4.5 Sleep schedule,9 to 10,"Inactivity detection, nightly sleep after 10 pm, time sync over LoRaWAN, wake",Danish,6,Sleep schedule module
+Firmware,M4.5 Sleep schedule,9 to 10,Handling of events during sleep per the client's answer,Danish,2,Sleep event handling
+Firmware,M4.6 Battery and heartbeat,10 to 11,"Battery voltage under load, temperature reading, daily heartbeat uplink",Danish,4,Heartbeat module
+Firmware,M4.6 Battery and heartbeat,10 to 11,"Low power tuning: peripherals off, lowest sleep current",Danish,6,Power tuned build
+Firmware,M4.7 Reliability and settings,11,"Watchdog, brownout and fault recovery",Danish,4,Reliability module
+Firmware,M4.7 Reliability and settings,11,"Settings in flash: LoRaWAN keys, BLE key, grouping and sleep settings",Danish,3,Settings module
+Firmware,M4.8 Payload spec and decoder,8,"Payload specification for uplink, heartbeat and BLE",Danish,3,docs/payload-spec.md
+Firmware,M4.8 Payload spec and decoder,8,Helium decoder function with test vectors,Danish,4,decoder.js and test vectors
+Firmware,M4.8 Payload spec and decoder,8,Handover session with the dashboard and app team,Danish,2,Handover notes
+Firmware,M4.9 Integration,13,Integration on prototype boards and bug fixing,Danish,8,Firmware release v0.9
+Testing,M5.1 Current measurement,13 to 14,"Bench setup and measurement at room temperature: sleep floor, charge per uplink, BLE events, switch reading",Danish,6,Current test report (room)
+Testing,M5.1 Current measurement,13 to 14,Measurement at 60 to 70 C: sleep floor and cell voltage under transmit pulse with buffer,Danish,6,Current test report (high temperature)
+Testing,M5.1 Current measurement,13 to 14,Update the power budget with measured values,Danish,3,docs/power-budget.md (measured)
+Testing,M5.2 Signal test,15,"Signal test to the Helium hotspot: RSSI, SNR, spreading factor and packet loss log",Danish,5,Signal test report
+Testing,M5.3 Functional and endurance test,15 to 16,"Test plan and 16-slot functional test on all 3 units, both radios",Danish,6,Functional test report
+Testing,M5.3 Functional and endurance test,15 to 16,"Endurance run: repeated place and remove cycles, message loss count over at least one week",Danish,8,Endurance test report
+Testing,M5.4 Field trial support,17 to 18,Installation support and remote log review during the field trial,Danish,8,Field trial log
+Testing,M5.4 Field trial support,17 to 18,Fixes from the field trial and firmware release,Danish,6,Firmware release v1.0
+Documentation and handover,M6.1 Documentation,16 to 18,Firmware source handover with build and flash guide,Danish,4,Firmware guide
+Documentation and handover,M6.1 Documentation,16 to 18,"Hardware design package: schematic, BOM, layout files, assembly notes",Danish,3,Hardware package
+Documentation and handover,M6.1 Documentation,16 to 18,Compiled test reports,Danish,3,Test report set
+Documentation and handover,M6.1 Documentation,16 to 18,Installation and battery replacement guide,Danish,3,Field guide
+Documentation and handover,M6.2 Handover,18,Handover meeting and close-out,Danish,2,Signed handover note
+Client communication and project management,M7.1 Client communication,1 to 18,Weekly progress update to the client,Danish,16,Weekly updates
+Client communication and project management,M7.1 Client communication,1 to 18,Milestone demos and sign-off (4 milestones),Danish,6,Sign-off notes
+Client communication and project management,M7.2 Project management,1 to 18,"Partner coordination for layout, enclosure, dashboard and app",Danish,8,Coordination notes
+Client communication and project management,M7.2 Project management,1 to 18,"Plan, risk and issue tracking",Danish,4,Project board
+Optional,O1 Firmware update over Bluetooth,Adds about 1.5 weeks after M4.7,Secure bootloader with signed images and dual slot,Danish,8,Bootloader build
+Optional,O1 Firmware update over Bluetooth,Adds about 1.5 weeks after M4.7,Bluetooth update service and support to the app team,Danish,8,Update service
+Optional,O1 Firmware update over Bluetooth,Adds about 1.5 weeks after M4.7,Update testing including power loss during update,Danish,6,Update test report
+Optional,O2 Site signal survey before design,Adds about 1 week before week 1,Prepare a test node from a dev kit with logging,Danish,4,Test node
+Optional,O2 Site signal survey before design,Adds about 1 week before week 1,Survey support and data review,Danish,5,Survey log
+Optional,O2 Site signal survey before design,Adds about 1 week before week 1,Survey report with spreading factor and power budget impact,Danish,3,Signal survey report
+Optional,O3 Client-owned gateway setup,Adds about 0.5 week before M5.2,Gateway selection and configuration,Danish,4,Gateway config
+Optional,O3 Client-owned gateway setup,Adds about 0.5 week before M5.2,Network server routing and device registration,Danish,4,Network setup notes
+Optional,O3 Client-owned gateway setup,Adds about 0.5 week before M5.2,End to end test through the client gateway,Danish,2,Gateway test note
+Buffer,Buffer,,Contingency at 15 percent of basic hours,Danish,42,
+Total,Basic total,,"All basic modules, Danish hours",Danish,280,
+Total,Total with buffer,,Basic total plus buffer,Danish,322,
+Total,Optional total,,All optional items,Danish,44,
